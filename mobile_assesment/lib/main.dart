@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_assesment/config/theme/theme.dart';
+import 'package:mobile_assesment/core/di/injection_container.dart';
 import 'package:mobile_assesment/features/dashboard/presentation/views/dashboard.dart';
 import 'package:mobile_assesment/injector.dart';
 import 'package:provider/provider.dart';
@@ -11,7 +12,7 @@ import 'features/dashboard/presentation/notifier/data.dart';
 import 'features/dashboard/presentation/views/splash.dart';
 
 void main() {
-  setUp().then((_) => runApp(const MyApp()));
+  configureDependencies().then((_) => runApp(const MyApp()));
 }
 
 class MyApp extends StatefulWidget {
@@ -31,7 +32,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [ChangeNotifierProvider.value(value: getIt<MyNotifier>())],
+      providers: [ChangeNotifierProvider.value(value: sl<MyNotifier>())],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Mobile Assesment',

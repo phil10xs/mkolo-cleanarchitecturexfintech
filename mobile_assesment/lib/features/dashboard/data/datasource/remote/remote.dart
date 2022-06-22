@@ -1,9 +1,11 @@
 import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
 
 abstract class RemoteDatasource {
   Future<List<Map<String, dynamic>>> getData();
 }
 
+@LazySingleton(as: RemoteDatasource)
 class RemoteDatasourceImpl extends RemoteDatasource {
   RemoteDatasourceImpl({
     required this.dio,

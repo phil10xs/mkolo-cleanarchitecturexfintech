@@ -1,8 +1,10 @@
 import 'package:dartz/dartz.dart';
+import 'package:injectable/injectable.dart';
 import 'package:mobile_assesment/core/failure/failure.dart';
 import 'package:mobile_assesment/core/usecases/usecases.dart';
 import 'package:mobile_assesment/features/dashboard/domain/repository/repo.dart';
 
+@lazySingleton
 class GetDataUsecase extends Usecase<void, NoParams> {
   GetDataUsecase({
     required this.repository,

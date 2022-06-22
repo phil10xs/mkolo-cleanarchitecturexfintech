@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
 import 'package:mobile_assesment/core/usecases/usecases.dart';
 
 import '../../domain/usecase/get_data.dart';
 
+@injectable
 class MyNotifier with ChangeNotifier {
   MyNotifier({
     required this.getDataUsecase,

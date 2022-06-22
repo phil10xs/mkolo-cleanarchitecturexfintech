@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
 import 'package:mobile_assesment/core/failure/failure.dart';
 import 'package:dartz/dartz.dart';
 import 'package:mobile_assesment/core/network/network_info.dart';
@@ -6,6 +7,7 @@ import 'package:mobile_assesment/core/network/network_info.dart';
 import '../../domain/repository/repo.dart';
 import '../datasource/remote/remote.dart';
 
+@LazySingleton(as: Repository)
 class RepositoryImpl implements Repository {
   RepositoryImpl({
     required this.networkInfo,

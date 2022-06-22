@@ -2,8 +2,6 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_assesment/config/theme/theme.dart';
 import 'package:mobile_assesment/core/di/injection_container.dart';
-import 'package:mobile_assesment/features/dashboard/presentation/views/dashboard.dart';
-import 'package:mobile_assesment/injector.dart';
 import 'package:provider/provider.dart';
 
 import 'config/routes/route.dart';

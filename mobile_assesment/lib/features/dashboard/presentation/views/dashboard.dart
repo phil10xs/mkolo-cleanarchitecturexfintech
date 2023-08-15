@@ -179,10 +179,10 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
                     GestureDetector(
                       onTap: () {
                         if (i == 2) {
-                          Application.router.navigateTo(
-                            context,
-                            Routes.sendmoney,
-                          );
+                          // Application.router.navigateTo(
+                          //   context,
+                          //   Routes.sendmoney,
+                          // );
                         }
                         value.current = i;
                         currentIndex = i;

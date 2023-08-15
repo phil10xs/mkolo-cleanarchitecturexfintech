@@ -273,14 +273,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.1"
-  fluro:
-    dependency: "direct main"
-    description:
-      name: fluro
-      sha256: "31f35b11377dfb1ba46abeba4129787c1babbfbe4e520eee27ac36ce8251e9a5"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.3"
   flutter:
     dependency: "direct main"
     description: flutter

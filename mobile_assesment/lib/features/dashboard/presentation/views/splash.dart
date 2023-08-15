@@ -13,10 +13,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Future.delayed(Duration(seconds: 3)).then((value) {
-      Application.router.navigateTo(
-        context,
-        Routes.dashboard,
-      );
+      // Application.router.navigateTo(
+      //   context,
+      //   Routes.dashboard,
+      // );
     });
 
     super.initState();
